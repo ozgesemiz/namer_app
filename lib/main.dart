@@ -56,15 +56,15 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     Widget page;
     switch (selectedIndex) {
-      case 0:
-        page = GeneratorPage();
-        break;
-      case 1:
-        page = FavoritesPage();
-        break;
-      default:
-        throw UnimplementedError('no widget for $selectedIndex');
-    }
+  case 0:
+    page = GeneratorPage();
+    break;
+  case 1:
+    page = FavoritesPage();
+    break;
+  default:
+    throw UnimplementedError('no widget for $selectedIndex');
+}
 
     return LayoutBuilder(builder: (context, constraints) {
       return Scaffold(
